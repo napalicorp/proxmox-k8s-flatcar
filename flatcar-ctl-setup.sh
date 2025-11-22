@@ -105,7 +105,7 @@ install_flatcar() {
     if ! command_exists flatcar-install; then
         echo "Error: flatcar-install command not found"
         exit 1
-    }
+    fi
     
     echo "Installing Flatcar Linux..."
     sudo flatcar-install -d /dev/sda -i "${FLATCAR_IGN}"
